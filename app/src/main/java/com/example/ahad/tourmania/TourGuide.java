@@ -3,10 +3,6 @@ package com.example.ahad.tourmania;
 class TourGuide {
 
     /**
-     * Constant value that represents no image was provided for this Tourguide
-     */
-    private static final int NO_IMAGE_PROVIDED = -1;
-    /**
      * Place Name for the TourGuide
      */
     private String mPlaceName;
