@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".DetailsActivity">
+  <ImageView
+      android:id="@+id/imageViewDetail"
+      android:layout_width="wrap_content"
+      android:layout_height="@dimen/two_hundred_dp" />
+
+    <TextView
+        android:textAllCaps="true"
+        android:id="@+id/tv_place_name_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/sixteen_dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        app:fontFamily="serif-monospace"
+        tools:text="Place" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/two_dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_margin="@dimen/sixteen_dp">
+    </View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_margin="@dimen/sixteen_dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_location"/>
+        <TextView
+            android:textColor="@color/colorAccent"
+            android:layout_margin="@dimen/sixteen_dp"
+            android:id="@+id/tv_location_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text = "location"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_margin="@dimen/sixteen_dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_timings"/>
+        <TextView
+            android:textColor="@color/colorAccent"
+            android:layout_margin="@dimen/sixteen_dp"
+            android:id="@+id/tv_timings_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text = "location"/>
+    </LinearLayout>
+
+    <TextView
+        android:textAllCaps="true"
+        android:textColor="@android:color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/about"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        tools:fontFamily="sans-serif-condensed" />
+    <View
+        android:layout_margin="@dimen/sixteen_dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/two_dp"
+        android:background="@color/colorPrimaryDark">
+    </View>
+
+    <TextView
+        android:id="@+id/tv_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/sixteen_dp"
+        app:fontFamily="monospace"
+        tools:text="description" />
+</LinearLayout>
+</ScrollView>
